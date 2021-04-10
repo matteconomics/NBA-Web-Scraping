@@ -386,7 +386,7 @@ Player_Salaries_2$Team_City[Player_Salaries_2$Team_City == "Portland Trail"] <- 
 
 # 7. Final Modifications and Merging of Player and Team Salary Datasets------------------------------------------------------------------------------------------------------
 
-# Modify Year and Season variables to be numeric. 
+# Extract first year from the Season and Year variables 
 Player_Salaries_2$Season <- str_extract(Player_Salaries_2$Season, pattern = "^[^-]*")
 Total_Team_Salary$Year <- str_extract(Total_Team_Salary$Year, pattern = "^[^-]*")
 
